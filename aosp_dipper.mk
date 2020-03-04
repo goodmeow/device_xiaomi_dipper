@@ -6,23 +6,23 @@
 
 $(call inherit-product, device/xiaomi/dipper/device.mk)
 
-# Inherit some common KomodoOS stuff.
+# Inherit some common ExtendedUI stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_WIFI_EXT := true
-# KOMODO_BUILD_TYPE := OFFICIAL
+# EXUI_BUILD_TYPE := OFFICIAL
 CURRENT_BUILD_TYPE :=gapps
 TARGET_GAPPS_ARCH :=arm64
-$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := komodo_dipper
+PRODUCT_NAME := aosp_dipper
 PRODUCT_DEVICE := dipper
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    org.komodo.maintainer= we're looking for maintainer
+    org.aosp.maintainer= we're looking for maintainer
 
 BUILD_FINGERPRINT := "Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys"
 
