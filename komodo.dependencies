@@ -1,0 +1,19 @@
+[
+  {
+    "repository": "goodmeow/device_xiaomi_sdm845-common",
+    "target_path": "device/xiaomi/sdm845-common",
+    "branch": "ten",
+    "remote": "github"
+  },
+  {
+    "remote": "github",
+    "repository": "goodmeow/vendor_xiaomi",
+    "target_path": "vendor/xiaomi",
+    "branch": "ten-1"
+  },
+  {
+   "remote": "github",
+   "repository": "Havoc-OS/android_packages_apps_Dirac",
+   "target_path": "packages/apps/Dirac",
+   "branch": "ten"
+]

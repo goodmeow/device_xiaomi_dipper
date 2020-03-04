@@ -14,4 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_dipper.mk
+    $(LOCAL_DIR)/komodo_dipper.mk
+    
+COMMON_LUNCH_CHOICES := \
+    komodo_dipper-user \
+    komodo_dipper-userdebug \
+    komodo_dipper-eng
+
