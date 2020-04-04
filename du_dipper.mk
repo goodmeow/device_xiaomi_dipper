@@ -5,16 +5,20 @@
 #
 
 $(call inherit-product, device/xiaomi/dipper/device.mk)
+#firmware is inherited in device makefile
 
-# Inherit some common PixelExperience stuff.
+# Inherit some common stuff.
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_WIFI_EXT := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_STOCK_ARCORE := true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1440
+DU_BUILD_TYPE := UNOFFICIAL
+# CURRENT_BUILD_TYPE :=gapps
+# TARGET_GAPPS_ARCH :=arm64
+#$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_dipper
+PRODUCT_NAME := du_dipper
 PRODUCT_DEVICE := dipper
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8

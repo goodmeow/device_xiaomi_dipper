@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_dipper.mk
+    $(LOCAL_DIR)/du_dipper.mk
+    
+COMMON_LUNCH_CHOICES := \
+    du_dipper-user \
+    du_dipper-userdebug \
+    du_dipper-eng
