@@ -11,11 +11,9 @@ $(call inherit-product, device/xiaomi/dipper/device.mk)
 $(call inherit-product, vendor/du/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_WIFI_EXT := true
-TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_BOOT_ANIMATION_RES := 1080
 DU_BUILD_TYPE := UNOFFICIAL
-# CURRENT_BUILD_TYPE :=gapps
-# TARGET_GAPPS_ARCH :=arm64
-#$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := du_dipper
