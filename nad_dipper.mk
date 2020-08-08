@@ -8,15 +8,14 @@ $(call inherit-product, device/xiaomi/dipper/device.mk)
 #firmware is inherited in device makefile
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_WIFI_EXT := true
 TARGET_BOOT_ANIMATION_RES := 1080
-DU_BUILD_TYPE := UNOFFICIAL
+NAD_BUILD_TYPE := SamWitwicky 
 
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := du_dipper
+PRODUCT_NAME := nad_dipper
 PRODUCT_DEVICE := dipper
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8
