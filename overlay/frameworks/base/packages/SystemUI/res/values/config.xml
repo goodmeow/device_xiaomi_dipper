@@ -27,5 +27,4 @@
     <integer name="config_maxVisibleNotificationIcons">6</integer>
     <integer name="config_maxVisibleNotificationIconsWhenDark">7</integer>
 
-    <dimen name="rounded_corner_content_padding">28.0px</dimen>
 </resources>
