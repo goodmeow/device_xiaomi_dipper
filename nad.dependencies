@@ -3,7 +3,7 @@
     "remote": "github",
     "repository": "NusantaraROM-devices/device_xiaomi_sdm845-common",
     "target_path": "device/xiaomi/sdm845-common",
-    "branch": "10-dipper"
+    "branch": "10"
   },
   {
     "remote": "github",
@@ -15,6 +15,6 @@
     "remote": "github",
     "repository": "gmw-project/vendor_xiaomi",
     "target_path": "vendor/xiaomi",
-    "branch": "10-dipper-2"
+    "branch": "10-dipper"
     }
 ]
