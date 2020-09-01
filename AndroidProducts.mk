@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_dipper.mk
+    $(LOCAL_DIR)/ancient_dipper.mk
     
 COMMON_LUNCH_CHOICES := \
-    nad_dipper-user \
-    nad_dipper-userdebug \
-    nad_dipper-eng
+    ancient_dipper-user \
+    ancient_dipper-userdebug \
+    ancient_dipper-eng

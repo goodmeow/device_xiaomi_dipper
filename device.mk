@@ -6,27 +6,18 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/dipper/dipper-vendor.mk)
-
-# Firmware
-#$(call inherit-product, vendor/xiaomi/firmware/dipper/firmware.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2248
 TARGET_SCREEN_WIDTH := 1080
 
-# GoogleCamera
-# $(call inherit-product, packages/apps/GoogleCameraMod/xiaomi-sdm845/config.mk)
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
-
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -113,7 +104,3 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     vendor/nxp/opensource/pn5xx
-
-# Wallpapers
-PRODUCT_PACKAGES += \
-    PixelLiveWallpaperPrebuilt
