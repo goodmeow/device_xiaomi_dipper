@@ -23,4 +23,10 @@
     <!-- Radius of the software rounded corners at the bottom of the display in its natural
         orientation. If zero, the value of rounded_corner_radius is used. -->
     <dimen name="rounded_corner_radius_bottom">87.0px</dimen>
+
+    <!-- Margin on the left side of the carrier text on Keyguard -->
+    <dimen name="keyguard_carrier_text_margin">20dp</dimen>
+
+    <!-- Margin on the right side of the system icon group on Keyguard. -->
+    <dimen name="system_icons_keyguard_padding_end">12dp</dimen>
 </resources>
